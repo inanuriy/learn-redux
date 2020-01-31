@@ -4,6 +4,8 @@ import Square from './components/Square';
 import Segitiga from './components/Segitiga';
 import Lingkaran from './components/Lingkaran';
 import JajarGenjang from './components/JajarGenjang';
+import SquareRedux from './components/SquareRedux';
+
 
 function App() {
   return (
@@ -12,7 +14,7 @@ function App() {
       <Square /><hr/>
       <Segitiga /><hr/>
       <Lingkaran /><hr/>
-      <JajarGenjang />
+      <SquareRedux /><hr/>
     </div>
   );
 }

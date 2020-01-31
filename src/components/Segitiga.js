@@ -11,7 +11,7 @@ export default function Math() {
   const handleSubmit = event => {
     event.preventDefault();
     const resultKeliling = 3 * segitiga;
-    const resultLuas = ((segitiga*segitiga) / 4) * 1.732 ;
+    const resultLuas = ((segitiga*segitiga) / 4) * 1.76 ;
     setResult({ keliling: resultKeliling, luas: resultLuas});
   };
 

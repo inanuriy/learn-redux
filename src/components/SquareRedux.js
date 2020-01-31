@@ -27,7 +27,7 @@ function Square(props) {
       >
         minus
       </button>
-      <h2>Luas: {props.luas}</h2>
+      <h2>Luas: {props.sisi}² = {props.luas}</h2>
       <button
         onClick={() => {
           props.hitungLuas();
@@ -35,7 +35,7 @@ function Square(props) {
       >
         Hitung Luas
       </button>
-      <h2>Keliling: {props.keliling}</h2>
+      <h2>Keliling: {props.sisi} x 4 = {props.keliling}</h2>
       <button
         onClick={() => {
           props.hitungKeliling();
@@ -49,9 +49,9 @@ function Square(props) {
 
 const mapStateToProps = state => {
   return {
-    sisi: state.sisi,
-    luas: state.luas,
-    keliling: state.keliling
+    sisi: state.square.sisi,
+    luas: state.square.luas,
+    keliling: state.square.keliling
   };
 };
 

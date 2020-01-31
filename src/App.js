@@ -5,6 +5,7 @@ import Segitiga from './components/Segitiga';
 import Lingkaran from './components/Lingkaran';
 import JajarGenjang from './components/JajarGenjang';
 import SquareRedux from './components/SquareRedux';
+import SegitigaRedux from './components/SegitigaRedux'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Segitiga /><hr/>
       <Lingkaran /><hr/>
       <SquareRedux /><hr/>
+      <SegitigaRedux />
     </div>
   );
 }

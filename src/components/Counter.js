@@ -28,7 +28,7 @@ function Counter(props) {
 
 const mapStateToProps = state => { //mapStateToProps untuk menarik data
   return {
-    counter: state.count
+    counter: state.counter.count
   };
 };
 

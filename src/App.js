@@ -8,55 +8,56 @@ import SquareRedux from "./components/SquareRedux";
 import SegitigaRedux from "./components/SegitigaRedux";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
-import Github from './components/Github';
-import Mock from './components/Mock';
+import Github from "./components/Github";
+import Mock from "./components/Mock";
 
 function App() {
   return (
     <div>
-      <Container fluid style={{display: "flex", flexDirection: "row",
-            flexWrap: "wrap",
-            justifyContent: "center"}}>
-        <Card border="primary" style={{ width: "250px" }}>
+      <h1 style={{textAlign: "center", marginTop: "20px"}} >Count with Redux</h1>
+      <Container
+        fluid
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          flexWrap: "wrap",
+          justifyContent: "center"
+        }}
+      >
+        <Card border="primary" style={{ width: "250px", margin: "10px" }}>
           <Card.Body>
-              <Counter />
+            <Counter />
           </Card.Body>
         </Card>
-
-        <Card border="secondary" style={{ width: "250px" }}>
+        <Card border="secondary" style={{ width: "250px", margin: "10px" }}>
           <Card.Body>
-              <Square />
+            <Square />
           </Card.Body>
         </Card>
-
-        <Card border="success" style={{ width: "250px" }}>
+        <Card border="success" style={{ width: "250px", margin: "10px" }}>
           <Card.Body>
-              <Segitiga />
+            <Segitiga />
           </Card.Body>
         </Card>
         <br />
-
-        <Card border="danger" style={{ width: "250px" }}>
+        <Card border="danger" style={{ width: "250px", margin: "10px" }}>
           <Card.Body>
-              <Lingkaran />
+            <Lingkaran />
           </Card.Body>
         </Card>
-
-        <Card border="warning" style={{ width: "250px" }}>
+        <Card border="warning" style={{ width: "250px", margin: "10px" }}>
           <Card.Body>
-           
-              <SquareRedux />
+            <SquareRedux />
           </Card.Body>
         </Card>
-
-        <Card border="info" style={{ width: "250px" }}>
+        <Card border="info" style={{ width: "250px", margin: "10px" }}>
           <Card.Body>
-              <SegitigaRedux />
+            <SegitigaRedux />
           </Card.Body>
         </Card>
+        <Github />
+        <Mock />
       </Container>
-      <Github />
-      <Mock />
     </div>
   );
 }

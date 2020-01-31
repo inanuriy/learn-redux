@@ -24,33 +24,33 @@ function App() {
           justifyContent: "center"
         }}
       >
-        <Card border="primary" style={{ width: "250px", margin: "10px" }}>
+        <Card border="primary" style={{ width: "300px", margin: "10px" }}>
           <Card.Body>
             <Counter />
           </Card.Body>
         </Card>
-        <Card border="secondary" style={{ width: "250px", margin: "10px" }}>
+        <Card border="secondary" style={{ width: "300px", margin: "10px" }}>
           <Card.Body>
             <Square />
           </Card.Body>
         </Card>
-        <Card border="success" style={{ width: "250px", margin: "10px" }}>
+        <Card border="success" style={{ width: "300px", margin: "10px" }}>
           <Card.Body>
             <Segitiga />
           </Card.Body>
         </Card>
         <br />
-        <Card border="danger" style={{ width: "250px", margin: "10px" }}>
+        <Card border="danger" style={{ width: "300px", margin: "10px" }}>
           <Card.Body>
             <Lingkaran />
           </Card.Body>
         </Card>
-        <Card border="warning" style={{ width: "250px", margin: "10px" }}>
+        <Card border="warning" style={{ width: "300px", margin: "10px" }}>
           <Card.Body>
             <SquareRedux />
           </Card.Body>
         </Card>
-        <Card border="info" style={{ width: "250px", margin: "10px" }}>
+        <Card border="info" style={{ width: "300px", margin: "10px" }}>
           <Card.Body>
             <SegitigaRedux />
           </Card.Body>

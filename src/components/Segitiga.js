@@ -21,9 +21,9 @@ export default function Math() {
 
   return (
     <div>
-      <h1>Segitiga Formula</h1>
-      <h2>Luas: ({segitiga}² / 4) x √3 </h2>
-      <h2>Keliling: 3 x {segitiga} </h2>
+      <h2>Segitiga Formula</h2>
+      <h4>Luas: ({segitiga}² / 4) x √3 </h4>
+      <h4>Keliling: 3 x {segitiga} </h4>
       <form onSubmit={handleSubmit}>
         <input
           type="number"
@@ -33,8 +33,8 @@ export default function Math() {
         />
         <button type="submit">Result</button>
       </form>
-      <h1>Keliling Segitiga: {result.keliling}</h1>
-      <h1>Luas Segitiga: {result.luas}</h1>
+      <h4>Keliling Segitiga: {result.keliling}</h4>
+      <h4>Luas Segitiga: {result.luas}</h4>
     </div>
   );
 }

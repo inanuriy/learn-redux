@@ -18,9 +18,9 @@ export default function Square() {
 
   return (
     <div>
-      <h1>Square Formula</h1>
-      <h2>Keliling: 4 x {square}</h2>
-      <h2>Luas: {square} x {square} </h2>
+      <h2>Square Formula</h2>
+      <h4>Keliling: 4 x {square}</h4>
+      <h4>Luas: {square} x {square} </h4>
       <form onSubmit={handleSubmit}>
         <input
           type="number"
@@ -30,8 +30,8 @@ export default function Square() {
         />
         <button type="submit">Result</button>
       </form>
-      <h1>Keliling persegi: {result.keliling}</h1>
-      <h1>Luas persegi: {result.luas}</h1>
+      <h4>Keliling persegi: {result.keliling}</h4>
+      <h4>Luas persegi: {result.luas}</h4>
     </div>
   );
 }

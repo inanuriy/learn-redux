@@ -11,8 +11,8 @@ function Square(props) {
   console.log(props);
   return (
     <div>
-      <h1>Square Redux</h1>
-      <h2>Sisi: {props.sisi}</h2>
+      <h2>Square Redux</h2>
+      <h4>Sisi: {props.sisi}</h4>
       <button
         onClick={() => {
           props.addCount();
@@ -27,7 +27,7 @@ function Square(props) {
       >
         minus
       </button>
-      <h2>Luas: {props.sisi}² = {props.luas}</h2>
+      <h4>Luas: {props.sisi}² = {props.luas}</h4>
       <button
         onClick={() => {
           props.hitungLuas();
@@ -35,7 +35,7 @@ function Square(props) {
       >
         Hitung Luas
       </button>
-      <h2>Keliling: {props.sisi} x 4 = {props.keliling}</h2>
+      <h4>Keliling: {props.sisi} x 4 = {props.keliling}</h4>
       <button
         onClick={() => {
           props.hitungKeliling();

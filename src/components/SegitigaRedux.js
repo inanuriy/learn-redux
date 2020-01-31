@@ -11,8 +11,8 @@ function Segitiga(props) {
   console.log(props);
   return (
     <div>
-      <h1>Segitiga Redux</h1>
-      <h2>Sisi: {props.sisiSegitiga}</h2>
+      <h2>Segitiga Redux</h2>
+      <h4>Sisi: {props.sisiSegitiga}</h4>
       <button
         onClick={() => {
           props.addCountSegitiga();
@@ -27,7 +27,7 @@ function Segitiga(props) {
       >
         minus
       </button>
-      <h2>Luas: ({props.sisiSegitiga}² / 4) x √3 =  {props.luasSegitiga}</h2>
+      <h4>Luas: ({props.sisiSegitiga}² / 4) x √3 =  {props.luasSegitiga}</h4>
       <button
         onClick={() => {
           props.hitungLuasSegitiga();
@@ -35,7 +35,7 @@ function Segitiga(props) {
       >
         Hitung Luas
       </button>
-      <h2>Keliling: {props.sisiSegitiga} x 3 = {props.kelilingSegitiga}</h2>
+      <h4>Keliling: {props.sisiSegitiga} x 3 = {props.kelilingSegitiga}</h4>
       <button
         onClick={() => {
           props.hitungKelilingSegitiga();

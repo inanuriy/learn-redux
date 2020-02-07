@@ -3,13 +3,15 @@ import Counter from "./components/Counter";
 import Square from "./components/Square";
 import Segitiga from "./components/Segitiga";
 import Lingkaran from "./components/Lingkaran";
-import JajarGenjang from "./components/JajarGenjang";
+// import JajarGenjang from "./components/JajarGenjang";
 import SquareRedux from "./components/SquareRedux";
 import SegitigaRedux from "./components/SegitigaRedux";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Github from "./components/Github";
 import Mock from "./components/Mock";
+import FetchOwnApi from "./components/FetchOwnApi";
+import Users from "./components/Users";
 
 function App() {
   return (
@@ -58,6 +60,8 @@ function App() {
         <Github />
         <Mock />
       </Container>
+      <FetchOwnApi/>
+      <Users/>
     </div>
   );
 }

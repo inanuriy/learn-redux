@@ -45,8 +45,9 @@ class Users extends Component {
             }
             return errors;
           }}
-          onSubmit={(values, { setSubmitting }) => {
+          onSubmit={(values) => {
               let formData = new FormData();
+
               for (const key in values) {
                   if (values.hasOwnProperty(key)) {
                       formData.append(key, values[key]);
@@ -116,16 +117,19 @@ class Users extends Component {
               />
               {errors.age && touched.age && errors.age}
               <input
-                type="text"
+                type="email"
                 name="email"
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.email}
                 placeholder="email"
               />
+              <span style={{color: "red", fontStyle: "italic"}}>
+                  {errors.email && touched.email && errors.email}
+              </span>
               {errors.email && touched.email && errors.email}
               <input
-                type="text"
+                type="password"
                 name="password"
                 onChange={handleChange}
                 onBlur={handleBlur}
@@ -140,8 +144,6 @@ class Users extends Component {
                   setFieldValue("avatar", event.currentTarget.files[0]);
                   this.handleImage(event);
                 }}
-                onBlur={handleBlur}
-                value={values.file}
               />
               {this.state.image !== "" && (
                 <img src={this.state.image} alt="avatar" />

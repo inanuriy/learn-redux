@@ -1,4 +1,10 @@
 import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect
+} from "react-router-dom";
 import Counter from "./components/Counter";
 import Square from "./components/Square";
 import Segitiga from "./components/Segitiga";
@@ -12,6 +18,7 @@ import Github from "./components/Github";
 import Mock from "./components/Mock";
 import FetchOwnApi from "./components/FetchOwnApi";
 import Users from "./components/Users";
+import TodoList from "./components/TodoList";
 
 function App() {
   return (
@@ -62,6 +69,7 @@ function App() {
       </Container>
       <FetchOwnApi/>
       <Users/>
+      <TodoList/>
     </div>
   );
 }
